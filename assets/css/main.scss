@@ -3,6 +3,13 @@
 @import "variables";
 
 
+.h1, h1 {
+  @media (max-width: 700px) {
+    font-size: 1.5em;
+  }
+}
+
+
 // start content
 body {
   background-color: #fff;
@@ -11,26 +18,38 @@ body {
   a:hover { color: rgba(0,0,0,.9); text-decoration: none; }
 }
 .page-content {
-  @media (min-width: 700px) {
-    min-height: 500px;
-  }
+  min-height: calc(100vh - 220px);
 }
 
-
-// navbar navbar-expand-sm navbar-light bg-light
 .navbar {
   background-color: #fff4f4;
-  height: 80px;
+
   font-size: 1.2em;
 
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 25px;
   margin-bottom: 20px;
 
   .navbar-brand {
     color: rgba(0,0,0,.9);
+    padding-right: 20px;
+  }
+  .nav-item {
+    padding: 10px;
   }
 }
+
+.profile_img {
+  margin: 10px;
+  border: 1px solid rgba(0,0,0,.5);
+  float: right;
+  img {
+    width: 300px;
+  }
+  @media (max-width: 700px) {
+    margin: 5px;
+  }
+}
+
 
 .img_container {
   margin: 10px;
@@ -38,11 +57,17 @@ body {
   img {
     width: 100%;
   }
+  @media (max-width: 700px) {
+    margin: 5px;
+  }
 }
 
 .portfolio_links {
-  margin: 10px;
+  margin: 5px;
   font-size: 1.2em;
+  @media (max-width: 700px) {
+    font-size: 1em;
+  }
 }
 
 
