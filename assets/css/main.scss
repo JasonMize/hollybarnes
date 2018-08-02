@@ -4,7 +4,7 @@
 
 
 .h1, h1 {
-  @media (max-width: 700px) {
+  @media (max-width: 576px) {
     font-size: 1.5em;
   }
 }
@@ -43,9 +43,12 @@ body {
   border: 1px solid rgba(0,0,0,.5);
   float: right;
   img {
-    width: 300px;
+    width: 250px;
+    @media (max-width: 576px) {
+      width: 150px;
+    }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 576px) {
     margin: 5px;
   }
 }
@@ -57,7 +60,7 @@ body {
   img {
     width: 100%;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 576px) {
     margin: 5px;
   }
 }
@@ -65,7 +68,7 @@ body {
 .portfolio_links {
   margin: 5px;
   font-size: 1.2em;
-  @media (max-width: 700px) {
+  @media (max-width: 576px) {
     font-size: 1em;
   }
 }
